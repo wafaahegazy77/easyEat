@@ -1,0 +1,80 @@
+.header {
+    background: url(../../../../public/assets/images/header-1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    overflow: hidden;
+    position: relative;
+    padding: 150px 0 100px 0;
+    .txt_box {
+        .title {
+            font-size: calc(4vw + 35px);
+        }   
+        .p {
+            font-size: 20px;
+
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1.7;
+            padding: 0 2vw;
+        }
+        .butn {
+            width: 250px;
+            height: 60px;
+            color: #fff;
+            background-color: $mainColor;
+            border: 2px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-weight: bold;
+            text-transform: capitalize;
+            border-radius: 25px;
+            font-size: 18px;
+
+            &:hover {
+
+            }
+        }
+    }
+
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom , #000 , #0009) ;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 150px 2vw 100px 2vw;
+        .txt_box {
+            .title {
+                font-size: 25px;
+            }
+            .p {
+                font-size: 12px;
+                margin:  18px 0 !important;
+            }
+            .butn {
+                width: 180px;
+                height: 60px;
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.loading_pg {
+    background-color: #101010f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    backdrop-filter: blur(2px);
+    transition: all .3s linear;
+    .txt {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        // background-color: #000;
+        overflow: hidden;
+        span {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: $mainColor;
+            &:nth-last-of-type(1) {
+                animation: textAnim 1.5s .6s infinite alternate-reverse ease-in-out ;
+            }
+            &:nth-last-of-type(2) {
+                animation: textAnim 1.5s .8s infinite alternate-reverse ease-in-out ;
+            }
+            &:nth-last-of-type(3) {
+                animation: textAnim 1.5s 1s infinite alternate-reverse ease-in-out ;
+            }
+        }
+    }
+   
+}
+
+@keyframes textAnim {
+    0% {
+        transform: translateY(3rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

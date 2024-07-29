@@ -1,0 +1,35 @@
+.bread_sec {
+    background: url(../../../../public/assets/images/video_bg.jpeg) center no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 15px;
+    background-attachment: fixed;
+    .txt_box {
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $mainColor;
+        a {
+            color: #fff;
+        }
+        span {
+            color: rgba(255, 255, 255, 0.849);
+        }
+    }
+    &::after {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.793);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

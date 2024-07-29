@@ -1,0 +1,108 @@
+.prodCard {
+    position: relative;
+    background-color: #1D1D1D;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    .img_box {
+        height: 250px;
+        border-radius: 16px;
+        position: relative;
+        .prodImg {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+        .newBadge {
+            position: absolute;
+            top: -25px;
+            right: 20px;
+            background-color: $mainColor;
+            color: #fff;
+            width: 90px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 18px;
+        }
+    }
+    .card-body {
+        padding: 1.5rem .25rem;
+        overflow: hidden;
+        .card_head {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #fff1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            .price {
+                color: $mainColor;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 22px;
+                margin-bottom: 0;
+            }
+            .rating {
+                color: #fff;
+                font-size: 22px;
+                svg {
+                    color: #FFD700;
+                    margin-inline-end: 3px;
+                }
+            }
+        }
+        .prod_name {
+            font-weight: 600;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            display: block;
+        }
+        .ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 10px;
+                svg {
+                    color: $mainColor;
+                    margin-inline-end: 5px;
+                }
+            }
+        }
+
+        .cart_butn {
+            width: 100%;
+            border: 3px solid #fff;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 14px;
+            color: #fff;
+            margin-top: 25px;
+            text-transform: capitalize;
+            background-color: transparent;
+            transition: all .3s linear;
+            &:hover {
+                border-color: $mainColor;
+                background-color: $mainColor;
+            }
+        }
+    }
+}

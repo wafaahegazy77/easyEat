@@ -1,0 +1,58 @@
+.swiper--option {
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-end: 3vw;
+    .swiper--arrows {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        .arrow {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s linear;
+            cursor: pointer;
+            &:hover {
+                background-color: $mainColor;
+                border-color: $mainColor;
+            }
+            &.swiper-button-disabled {
+                cursor: auto;
+                color: #888 !important;
+                border-color: #888 !important; 
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        } 
+    }
+
+    .swiper--progress{
+        width: 90%;
+        height: 3px;
+        background-color: #fff4;
+        border-radius: 1rem;
+        .swiper-scrollbar-drag {
+            height: 100%;
+            display: block;
+            background-color: $mainColor;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper--arrows  {
+        display: none !important;
+    }
+    .swiper--progress {
+        width: 100% !important;
+    }
+}
